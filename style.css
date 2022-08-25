@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  background-color: bisque;
+}
+.header-container {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+  position: relative;
+  padding: 150px 0px;
+}
+.navbar {
+  position: absolute;
+  bottom: 0px;
+  left: 35%;
+}
+.vertical-navbar {
+  width: 16%;
+  height: 500px;
+  background-color: blue;
+}
+.vertical-navbar > ul li {
+  list-style: none;
+  margin: 20px;
+}
+.form-container {
+  width: 42%;
+  margin: 20px;
+}
+.table-container {
+  width: 42%;
+  border: 1px solid black;
+  margin: 20px;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: beige;
+}
+caption {
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  margin-top: 10px;
+  background-color: aqua;
+  color: blue;
+  text-align: center;
+  font-size: xx-large;
+}
+caption,
+th {
+  height: 40px;
+}
+th,
+td {
+  border: 1px solid red;
+}
+tr:nth-child(2n + 1) {
+  background-color: blueviolet;
+}
+tr > th {
+  background-color: red;
+}
+tr:nth-child(2n + 2) {
+  background-color: chartreuse;
+}
+tr:nth-child(2n + 1):hover {
+  background-color: dodgerblue;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+tr:nth-child(2n + 2):hover {
+  background-color: green;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+caption:hover {
+  background-color: blue;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+}
+caption::before {
+  content: "***";
+  color: red;
+}
+caption::after {
+  content: "***";
+  color: red;
+}
+aside ul li a::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-left: -10px;
+}
+aside ul li a {
+  text-decoration: none;
+}
+aside ul li a:hover {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 900;
+}
+.navbar::before {
+  content: url("https://e7.pngegg.com/pngimages/763/373/png-clipart-istanbul-bosphorus-art-festival-pictorial-miscellaneous-text.png");
+  position: relative;
+  left: -270px;
+}
+.navbar a {
+  margin-right: 20px;
+  color: blue;
+  font-size: x-large;
+  text-decoration: dotted;
+}
+.navbar a:hover {
+  color: red;
+  background-color: aliceblue;
+  font-size: xx-large;
+}
+.form-container {
+  background-color: aquamarine;
+  position: relative;
+}
+.onyazi {
+  width: 100px;
+  float: left;
+  margin: 20px;
+}
+/* ********************
+Float can kurtariyor. hem inline hem block elementlerde gecerli sag sol orta yaslamak cok kolay!!!
+*********************** */
+.box {
+  width: 200px;
+  float: inline-start;
+  margin: 20px;
+  border-radius: 0 10px 10px 0;
+}
+form input:focus {
+  background-color: blueviolet;
+  color: aqua;
+  font-size: 30px;
+}
+form input:hover {
+  background-color: greenyellow;
+  color: blue;
+  font-size: 30px;
+  box-shadow: 0 0 25px;
+}
+legend {
+  font-size: xx-large;
+  font-weight: 500;
+  color: red;
+}
+legend:hover {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  font-style: italic;
+}
+.onyazi:hover {
+  color: white;
+  font-size: 30px;
+}
+input[type="reset"] {
+  width: 100px;
+  display: inline-block;
+  position: absolute;
+  left: 55%;
+  bottom: 0px;
+}
+input[type="submit"] {
+  width: 100px;
+  position: absolute;
+  left: 32%;
+  bottom: 0px;
+}
+form label::after{
+    content:"*#";
+    color: red;
+}
